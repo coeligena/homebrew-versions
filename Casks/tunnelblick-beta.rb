@@ -12,7 +12,7 @@ cask 'tunnelblick-beta' do
 
   auto_updates true
 
-  app 'Tunnelblick.app'
+  app 'Tunnelblick.app'#, :target => 'Tunnelblick Moved.app'
 
   uninstall_preflight do
     set_ownership "#{appdir}/Tunnelblick.app"
@@ -29,6 +29,7 @@ cask 'tunnelblick-beta' do
                '~/Library/Application Support/Tunnelblick',
                '~/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/net.tunnelblick.tunnelblick.help*',
                '~/Library/Caches/net.tunnelblick.tunnelblick',
+               '~/Library/Cookies/net.tunnelblick.tunnelblick.binarycookies',
                '~/Library/Preferences/net.tunnelblick.tunnelblick.plist',
              ]
 
